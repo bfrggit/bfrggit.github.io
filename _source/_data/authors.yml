@@ -1,0 +1,26 @@
+qiuxi-zhu:
+  name: "Qiuxi (Charles) Zhu"
+  bio: >-
+    PhD.
+    Software Engineer.
+    Backend Developer.
+  avatar: "/assets/images/bio-photo-qiuxi.jpg"
+  links:
+    - label: "Homepage"
+      icon: "fas fa-fw fa-home"
+      url: "https://zhuq.me/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:uci.qiuxizhu+link@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/zhuqiuxi/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bfrggit/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/260010t/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram-square"
+      url: "https://instagram.com/260010i/"
