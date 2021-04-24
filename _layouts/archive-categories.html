@@ -1,20 +1,21 @@
 ---
-layout: single
+layout: archive
 title: Categories
 ---
 
+{{ content }}
+
 <!-- Begin List Posts
 ================================================== -->
-<section class="recent-posts">
-<h2 class="archive__subtitle">Archive of posts from <span>{{ page.type }} '{{ page.title }}'</span></h2>
+<h3 class="archive__subtitle">Archive of posts from <span>{{ page.type }} '{{ page.title }}'</span></h3>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
 
-{% for post in site.posts %}
-{% if post.categories contains page.category or post.category == page.category %}
+    {% for post in site.posts %}
+    {% if post.categories contains page.category or post.category == page.category %}
     {% include archive-single.html type=entries_layout %}
-{% endif %}    
-
-{% endfor %}
-
+    {% endif %}
+    {% endfor %}
+    
 </div>
-</section>
