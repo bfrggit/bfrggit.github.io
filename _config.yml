@@ -36,25 +36,17 @@ defaults:
     values:
       permalink: /blog/posts/:year/:month/:title/
 
+collections:
+  archives:
+    output: true
+    permalink: /blog/archives/:path/
+
 category_archive:
   type: jekyll-archives
-  path: /blog/categories/
+  path: /blog/archives/categories/
 tag_archive:
   type: jekyll-archives
-  path: /blog/tags/
-
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-    - year
-    - month
-  layout: archive-taxonomy
-  permalinks:
-    year: "/blog/posts/:year/"
-    month: "/blog/posts/:year/:month/"
-    category: "/blog/categories/:name/"
-    tag: "/blog/tags/:name/"
+  path: /blog/archives/tags/
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
